@@ -1,0 +1,50 @@
+diff --git a//dev/null b/css/style.css
+index 0000000000000000000000000000000000000000..d66cc06dd1faa0c8afaba1fbdcc1e5707ed8e6ec 100644
+--- a//dev/null
++++ b/css/style.css
+@@ -0,0 +1,45 @@
++:root {
++  --bg-color: #ffffff;
++  --text-color: #000000;
++  --accent-color: #00ff87;
++  --bg-alt: #f0f0f0;
++}
++body[data-theme='dark'] {
++  --bg-color: #000000;
++  --text-color: #ffffff;
++  --bg-alt: #121212;
++}
++body {
++  font-family: 'Inter', sans-serif;
++  background: var(--bg-color);
++  color: var(--text-color);
++  margin:0;
++  scroll-behavior:smooth;
++}
++header, footer {background: var(--bg-alt); padding:10px;}
++.navbar {display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;}
++.nav-links {list-style:none; display:flex; gap:1rem; padding:0; margin:0;}
++.nav-links a {color: var(--text-color); text-decoration:none; transition:color .3s, text-shadow .3s;}
++.nav-links a:hover {color: var(--accent-color); text-shadow:0 0 5px var(--accent-color);}
++button {background: var(--accent-color); border:none; padding:0.5rem 1rem; cursor:pointer; color:#000; transition:box-shadow .3s;}
++button:hover {box-shadow:0 0 10px var(--accent-color);}
++.hero {position:relative; height:80vh;}
++.hero video {position:absolute; width:100%; height:100%; object-fit:cover; top:0; left:0;}
++.hero .overlay {position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center; height:100%; background:rgba(0,0,0,0.5); text-align:center; color:#fff;}
++.sport-tiles {display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; padding:1rem;}
++.sport-tile {position:relative; height:150px; background-size:cover; background-position:center; color:#fff; display:flex; flex-direction:column; justify-content:center; align-items:center; text-shadow:0 0 5px #000; transition:transform .3s, box-shadow .3s;}
++.sport-tile:hover {transform:translateY(-5px); box-shadow:0 0 10px var(--accent-color);}
++.footer-links, .footer-links a {color: var(--text-color); text-decoration:none;}
++.footer-links a:hover {color: var(--accent-color); text-shadow:0 0 5px var(--accent-color);}
++.responsive {max-width:1200px; margin:0 auto;}
++.section {padding:2rem 1rem; opacity:0; transform:translateY(20px); transition:opacity .6s, transform .6s;}
++.section.visible {opacity:1; transform:translateY(0);}
++.cards {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1rem;}
++.card {background:var(--bg-alt); padding:1rem; border-radius:8px; box-shadow:0 0 5px rgba(0,0,0,0.1);}
++.card img {max-width:100%; border-radius:8px;}
++.map {width:100%; height:200px; border:0;}
++.form-group {margin-bottom:1rem; display:flex; flex-direction:column;}
++input, select, textarea {padding:0.5rem; border:1px solid #ccc; border-radius:4px;}
++.chat-box {border:1px solid #ccc; padding:1rem; height:200px; overflow-y:auto; background:var(--bg-alt);}
++.chat-input {display:flex; gap:0.5rem; margin-top:1rem;}
++@media (max-width:600px){.search input{width:100%; margin-top:0.5rem;}}
