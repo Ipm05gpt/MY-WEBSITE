@@ -1,0 +1,41 @@
+diff --git a//dev/null b/players.html
+index 0000000000000000000000000000000000000000..badd35267ac020ea5963a01c64585e22543317d1 100644
+--- a//dev/null
++++ b/players.html
+@@ -0,0 +1,36 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++  <meta charset="UTF-8">
++  <meta name="viewport" content="width=device-width, initial-scale=1.0">
++  <title>Maidaan - Find Players</title>
++  <link rel="icon" href="assets/favicon.ico">
++  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
++  <link rel="stylesheet" href="css/style.css">
++</head>
++<body id="players">
++<header id="header"></header>
++<main class="responsive">
++<section class="section">
++  <h2 data-i18n="players">Find Players</h2>
++  <ul id="invite-list"></ul>
++  <form id="invite-form">
++    <div class="form-group"><label>Sport</label><input name="sport" required></div>
++    <div class="form-group"><label>Details</label><input name="detail" required></div>
++    <button type="submit" data-i18n="post">Post Invite</button>
++  </form>
++</section>
++<section class="section">
++  <h2 data-i18n="chat">Chat</h2>
++  <div id="chat-box" class="chat-box" aria-live="polite"></div>
++  <form id="chat-form" class="chat-input">
++    <input name="message" aria-label="Message" required>
++    <button type="submit">Send</button>
++  </form>
++</section>
++</main>
++<footer id="footer"></footer>
++<script src="js/data.js"></script>
++<script src="js/script.js"></script>
++</body>
++</html>
