@@ -1,46 +1,122 @@
-diff --git a//dev/null b/index.html
-index 0000000000000000000000000000000000000000..bee74d251e5830948b8cfce2b3636a68f5967eb4 100644
---- a//dev/null
-+++ b/index.html
-@@ -0,0 +1,41 @@
-+<!DOCTYPE html>
-+<html lang="en">
-+<head>
-+  <meta charset="UTF-8">
-+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-+  <title>Maidaan - Home</title>
-+  <link rel="icon" href="assets/favicon.ico">
-+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-+  <link rel="stylesheet" href="css/style.css">
-+</head>
-+<body id="home">
-+<header id="header"></header>
-+<main>
-+<section class="hero">
-+  <video autoplay muted loop>
-+    <source src="assets/hero.mp4" type="video/mp4">
-+  </video>
-+  <div class="overlay">
-+    <h1>Play. Connect. Win.</h1>
-+    <button onclick="window.location='book.html'" data-i18n="book">Book Now</button>
-+  </div>
-+</section>
-+<section class="section sport-tiles responsive">
-+  <div class="sport-tiles">
-+    <a class="sport-tile" href="cricket.html" style="background-image:url('https://images.pexels.com/photos/274422/pexels-photo-274422.jpeg');" aria-label="Cricket"><h3>Cricket</h3><p>"Hit it hard!"</p></a>
-+    <a class="sport-tile" href="football.html" style="background-image:url('https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg');" aria-label="Football"><h3>Football</h3><p>"Kick off the passion."</p></a>
-+    <a class="sport-tile" href="badminton.html" style="background-image:url('https://images.pexels.com/photos/163407/badminton-court-badminton-sport-shuttlecock-163407.jpeg');" aria-label="Badminton"><h3>Badminton</h3><p>"Serve it up."</p></a>
-+    <a class="sport-tile" href="pickleball.html" style="background-image:url('https://images.pexels.com/photos/2202685/pexels-photo-2202685.jpeg');" aria-label="Pickleball"><h3>Pickleball</h3><p>"Swing together."</p></a>
-+    <a class="sport-tile" href="squash.html" style="background-image:url('https://images.pexels.com/photos/3638029/pexels-photo-3638029.jpeg');" aria-label="Squash"><h3>Squash</h3><p>"Wall to win."</p></a>
-+    <a class="sport-tile" href="tennis.html" style="background-image:url('https://images.pexels.com/photos/1161355/pexels-photo-1161355.jpeg');" aria-label="Tennis"><h3>Lawn Tennis</h3><p>"Ace your game."</p></a>
-+  </div>
-+</section>
-+<section class="section responsive">
-+  <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX6GwdWRQMQpq" width="100%" height="80" frameborder="0" allow="encrypted-media"></iframe>
-+</section>
-+</main>
-+<footer id="footer"></footer>
-+<script src="js/data.js"></script>
-+<script src="js/script.js"></script>
-+</body>
-+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metadata and external resources -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PropThinkers | MBA Pitch</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/25/25694.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-r6J3eyk7zQv7MrfGZuXL9FKcW7Rf6yZdav1xrPOjpmtob2JteLoI0lp4rWuHwoMvV7lidh+NangNh4tW7Yp91A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation bar with section links and bilingual hint -->
+  <header>
+    <nav class="navbar">
+      <a href="#problem"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i><span>Problem</span></a>
+      <a href="#solution"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i><span>Solution</span></a>
+      <a href="#business"><i class="fa-solid fa-chart-line" aria-hidden="true"></i><span>Business</span></a>
+      <a href="#wbd"><i class="fa-solid fa-check-circle" aria-hidden="true"></i><span>WBD</span></a>
+      <a href="#next"><i class="fa-solid fa-flag-checkered" aria-hidden="true"></i><span>Next</span></a>
+      <div class="lang-switch">EN | <span lang="te">తెలుగు</span></div>
+    </nav>
+  </header>
+
+  <!-- Hero section introducing the concept -->
+  <section class="hero">
+    <img src="https://images.unsplash.com/photo-1560185008-ff1ac43c41d1?auto=format&fit=crop&w=1600&q=80" alt="City skyline" class="hero-img">
+    <div class="hero-text">
+      <h1>Real Estate Reimagined</h1>
+      <p>MagicBricks model upgraded by B09</p>
+    </div>
+  </section>
+
+  <!-- Problem & Opportunity Section -->
+  <section id="problem" class="section">
+    <h2>Problem & Opportunity</h2>
+    <div class="grid">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=60" alt="Fragmented real estate listings">
+        <figcaption>Disparate listings puzzle buyers</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=800&q=60" alt="Growing housing demand">
+        <figcaption>Tier‑2 demand is surging</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1521790797524-b2497295b8c6?auto=format&fit=crop&w=800&q=60" alt="Opportunity chart">
+        <figcaption>Room for bilingual, curated platform</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Proposed Solution Section -->
+  <section id="solution" class="section alt">
+    <h2>Proposed Solution</h2>
+    <div class="grid">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=60" alt="Listing mockups on devices">
+        <figcaption>Visual listings with smart filters</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1581094794329-c34d7f1bbb1b?auto=format&fit=crop&w=800&q=60" alt="Lead capture form illustration">
+        <figcaption>Lead form → Google Sheets</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1587613752415-79b5e1c82b54?auto=format&fit=crop&w=800&q=60" alt="Bilingual content illustration">
+        <figcaption>English + Telugu ready content</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Business Model Section -->
+  <section id="business" class="section">
+    <h2>Business Model</h2>
+    <div class="grid">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=60" alt="Value proposition canvas diagram">
+        <figcaption>Value Proposition Canvas</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1590608897129-79da98d1593c?auto=format&fit=crop&w=800&q=60" alt="SWOT analysis chart">
+        <figcaption>SWOT Snapshot</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=60" alt="Revenue streams pie chart">
+        <figcaption>Ads & premium listings</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- WBD Compliance Section -->
+  <section id="wbd" class="section alt">
+    <h2>WBD Compliance Overview</h2>
+    <div class="icon-grid">
+      <div class="icon-card"><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i><p>Responsive</p></div>
+      <div class="icon-card"><i class="fa-solid fa-universal-access" aria-hidden="true"></i><p>Accessible</p></div>
+      <div class="icon-card"><i class="fa-solid fa-lock" aria-hidden="true"></i><p>Security.txt & HTTPS</p></div>
+      <div class="icon-card"><i class="fa-solid fa-sitemap" aria-hidden="true"></i><p>SEO Sitemap</p></div>
+      <div class="icon-card"><i class="fa-solid fa-share-nodes" aria-hidden="true"></i><p>Social Buttons</p></div>
+      <div class="icon-card"><i class="fa-solid fa-language" aria-hidden="true"></i><p>Bilingual Ready</p></div>
+    </div>
+  </section>
+
+  <!-- Next Steps Section -->
+  <section id="next" class="section">
+    <h2>Next Steps</h2>
+    <div class="timeline">
+      <div class="step"><span>1</span><p>Prototype listings</p></div>
+      <div class="step"><span>2</span><p>Connect Sheet leads</p></div>
+      <div class="step"><span>3</span><p>SEO roll‑out & launch</p></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 PropThinkers B09</p>
+  </footer>
+</body>
+</html>
